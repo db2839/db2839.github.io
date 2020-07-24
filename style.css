@@ -14,10 +14,27 @@ h1 {
     font-size: 3rem;
     color: #e2dbdb;
 }
+
+@keyframes glowing {
+    0% {
+      background-color: #F05F44;
+      box-shadow: 0 0 5px #F05F44;
+    }
+    50% {
+      background-color: #ee4b08;
+      box-shadow: 0 0 20px #ee4b08;
+    }
+    100% {
+      background-color: #F05F44;
+      box-shadow: 0 0 5px #F05F44;
+    }
+}
+
 hr {
     border-color: #F05F44;
     border-width: 3px;
     max-width: 65px;
+    animation: glowing 2000ms 5;
 }
 
 .buffer {
@@ -28,6 +45,7 @@ hr {
     font-weight: 700;
     border-radius: 300px;
     text-transform: uppercase;
+    animation: glowing 2000ms 5;
 }
 
 .btn-primary {
